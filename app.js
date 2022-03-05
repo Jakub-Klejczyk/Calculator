@@ -8,12 +8,14 @@ const btnMultiplication = document.getElementById("multiplication");
 const btnDivision = document.getElementById("division");
 
 let result = "";
+let firstResult = parseInt(firstNumber.value);
+let secondResult = parseInt(secondNumber.value);
 
 function onAddition() {
-  if (isNaN(firstNumber) && isNaN(secondNumber)) {
-    result = firstNumber.innerHTML + secondNumber.innerHTML;
+  if (typeof firstResult == "number" && typeof secondResult == "number") {
+    result = firstResult + secondResult;
     console.log(result);
-    resultForm.innerHTML = result;
+    resultForm.value = result;
   } else {
     alert("Type of input is not an number");
   }
