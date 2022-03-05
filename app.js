@@ -8,10 +8,12 @@ const btnMultiplication = document.getElementById("multiplication");
 const btnDivision = document.getElementById("division");
 
 let result = "";
-let firstResult = parseInt(firstNumber.value);
-let secondResult = parseInt(secondNumber.value);
 
 function onAddition() {
+  // parser does not see those variables. Please read about variables scope
+  let firstResult = parseInt(firstNumber.value);
+  let secondResult = parseInt(secondNumber.value);
+  
   if (typeof firstResult == "number" && typeof secondResult == "number") {
     result = firstResult + secondResult;
     console.log(result);
