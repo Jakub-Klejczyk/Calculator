@@ -8,13 +8,20 @@ body {
   background-color: rgba(128, 128, 128, 0.37);
 }
 
-.hoverText {
+.hoverDiv {
   display: none;
   position: absolute;
   z-index: 1;
+  background-color: rgba(128, 128, 128, 0.37);
+  border: 3px solid black;
+  box-shadow: 3px 3px #88888867;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  right: -30%;
 }
 
-.secondBtns:hover .hoverText {
+.secondBtns:hover .hoverDiv {
   display: block;
 }
 
@@ -40,6 +47,10 @@ body {
   border-radius: 5px;
   background-color: green;
   padding-left: 10px;
+}
+
+.form:disabled {
+  color: black;
 }
 
 .form::placeholder {
