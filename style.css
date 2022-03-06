@@ -5,7 +5,13 @@
 }
 
 body {
-  background-color: rgba(128, 128, 128, 0.37);
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 212, 212, 1) 0%,
+    rgba(159, 159, 159, 1) 35%,
+    rgba(144, 144, 144, 1) 100%
+  );
 }
 
 .hoverDiv {
@@ -14,7 +20,7 @@ body {
   z-index: 1;
   background-color: rgba(128, 128, 128, 0.37);
   border: 3px solid black;
-  box-shadow: 3px 3px #88888867;
+  box-shadow: 5px 5px #7c7c7c96;
   border-radius: 5px;
   width: auto;
   height: auto;
@@ -33,7 +39,7 @@ body {
   border: 3px solid black;
   border-radius: 5px;
   background-color: rgb(105, 104, 104);
-  box-shadow: 3px 3px #88888867;
+  box-shadow: 5px 5px #88888893;
   padding: 10px;
   width: 360px;
   height: 480px;
