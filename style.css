@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.37);
+}
+
+.hoverText {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.secondBtns:hover .hoverText {
+  display: block;
+}
+
+.object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: rgb(105, 104, 104);
+  box-shadow: 3px 3px #88888867;
+  padding: 10px;
+  width: 360px;
+  height: 480px;
+}
+
+.form {
+  height: 65px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 3px solid rgb(1, 65, 1);
+  border-radius: 5px;
+  background-color: green;
+  padding-left: 10px;
+}
+
+.form::placeholder {
+  color: black;
+}
+
+.button {
+  cursor: pointer;
+  height: 70px;
+  width: 100%;
+  border: 3px solid rgb(53, 53, 53);
+  border-radius: 5px;
+  background-color: rgb(139, 139, 139);
+}
+
+.firstBtns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1px;
+}
+
+.secondBtns {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+
+#addition,
+#subtraction,
+#multiplication {
+  margin-right: 5px;
+}
+
+#square,
+#root {
+  width: 100%;
+}
+
+#square {
+  margin-right: 5px;
+}
+
+#reset {
+  width: 100%;
+  background-color: rgb(136, 1, 1);
+  color: white;
+}

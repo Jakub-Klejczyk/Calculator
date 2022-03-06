@@ -5,44 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Calculator</title>
   </head>
   <body>
-    <div class="inputs">
-      <input
-        type="text"
-        class="form"
-        id="firstNumber"
-        placeholder="Wprowadź pierwszą liczbę"
-      />
-      <input
-        type="text"
-        class="form"
-        id="secondNumber"
-        placeholder="Wprowadź drugą liczbę"
-      />
-      <input
-        type="text"
-        class="form"
-        id="result"
-        disabled
-        placeholder="Wynik"
-      />
+    <div class="object">
+      <div class="inputs">
+        <input
+          type="text"
+          class="form"
+          id="firstNumber"
+          placeholder="First number"
+        />
+        <input
+          type="text"
+          class="form"
+          id="secondNumber"
+          placeholder="Second number"
+        />
+        <input
+          type="text"
+          class="form"
+          id="result"
+          disabled
+          placeholder="Result"
+        />
+      </div>
+      <div>
+        <div class="firstBtns">
+          <button class="button" id="addition" onclick="onAddition()">
+            Addition
+          </button>
+          <button class="button" id="subtraction" onclick="onSubtraction()">
+            Subtraction
+          </button>
+          <button
+            class="button"
+            id="multiplication"
+            onclick="onMultiplication()"
+          >
+            Multiplication
+          </button>
+          <button class="button" id="division" onclick="onDivision()">
+            Division
+          </button>
+        </div>
+        <div class="secondBtns">
+          <button class="button" id="square" onclick="onSquare()">
+            Square
+          </button>
+          <button class="button" id="root" onclick="onRoot()">Root</button>
+          <span class="hoverText">Use first input.</span>
+        </div>
+        <div>
+          <a href="index.html">
+            <button class="button" id="reset">Reset</button>
+          </a>
+        </div>
+      </div>
     </div>
-    <div>
-      <button class="button" id="addition" onclick="onAddition()">
-        Addition
-      </button>
-      <button class="button" id="subtraction" onclick="onSubtraction()">
-        Subtraction
-      </button>
-      <button class="button" id="multiplication" onclick="onMultiplication()">
-        Multiplication
-      </button>
-      <button class="button" id="division" onclick="onDivision()">
-        Division
-      </button>
-    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

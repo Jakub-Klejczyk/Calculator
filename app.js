@@ -51,3 +51,23 @@ function onDivision() {
   result = firstResult / secondResult;
   resultForm.value = result;
 }
+
+function onSquare() {
+  parsing();
+  if (isNaN(firstResult)) {
+    alert("Type of input is not an number");
+    return;
+  }
+  result = Math.pow(firstResult, 2);
+  resultForm.value = result;
+}
+
+function onRoot() {
+  parsing();
+  if (isNaN(firstResult)) {
+    alert("Type of input is not an number");
+    return;
+  }
+  result = Math.sqrt(firstResult, 2);
+  resultForm.value = result;
+}
